@@ -54,7 +54,7 @@ def goodName(surname, name, sex, year, month, day, hour, minute):
     temp = soup1.find_all("td")
     score = re.findall('(\S+)分',temp[22].string)[0]
     
-    msg = f'\n>>姓名：{surname}{name}({wuxing},{score}分,五行:{wuxing_score}分)\n\n參考來源網址(詳情請到網址內查詢)：\n{url}'
+    msg = f'\n>>姓名：{surname}{name}({wuxing},{score}分,五行:{wuxing_score}分)\n\n參考來源網址(詳情請到網址內查詢)：\nhttps://www.lnka.tw/app/analyzename.aspx'
     
     return msg, wuxing, score, wuxing_score
 
